@@ -29,6 +29,7 @@ correction speed.
   🤖 Cybernetic self-learning adaptive system implementing MIDS algorithm
 </p>
 
+#### Execution Trace
 ```
                                                          EXECUTION TRACE
 
