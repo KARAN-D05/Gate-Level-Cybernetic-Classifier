@@ -7,7 +7,6 @@
 
 <p align="center">
   <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning.gif" alt="Adaptive Learning Demonstration" width="1500">
-</p>
 
 <p align="center">
    <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
