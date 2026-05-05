@@ -7,6 +7,7 @@
 
 <p align="center">
   <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning.gif" alt="Adaptive Learning Demonstration" width="1500">
+</p>
 
 <p align="center">
    <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
@@ -85,7 +86,7 @@
     <img src="Detector_v0.1/Verilog-Implementation/images/waveform.png" 
          alt="Pattern Detector Output" 
          width="1500">
-    <p> Equivalence & Super-Pattern Recognition 🟦 </p>
+    <sub></b> <p> Equivalence & Super-Pattern Recognition 🟦 </p>
 </div>
 
 - [Detector_v0.2](Detector_v0.2/Verilog-Implementation)
@@ -94,7 +95,7 @@
     <img src="Detector_v0.2/Verilog-Implementation/images/waveform.png" 
          alt="Pattern Detector Output" 
          width="1500">
-    <p> Equivalence & Super & Sub & Anti-Pattern Recognition 🔹🟦 </p>
+   <sub></b> <p> Equivalence & Super & Sub & Anti-Pattern Recognition 🔹🟦 </p>
 </div>
 
 ### 🔄 Popcount-Based Adaptive Learning
@@ -105,7 +106,7 @@
     <img src="Detector_v1.0/Verilog-Implementation/images/waveform.png" 
          alt="Pattern Detector Output" 
          width="1500">
-    <p> Manually Alterable Decision Boundary ⚖️ </p>
+    <sub></b> <p> Manually Alterable Decision Boundary ⚖️ </p>
 </div>
 
 ## 🛠️Current Development:
