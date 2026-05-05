@@ -9,10 +9,6 @@
   <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning.gif" alt="Adaptive Learning Demonstration" width="1500">
 </p>
 
-<p align="center">
-  🤖 Cybernetic adaptive learning system implementing MIDS algorithm (Detector_v1.1) 
-</p>
-
 🐾 [Refer Execution Trace](https://github.com/KARAN-D05/Gate-Level-Perceptron/tree/main/Detector_v1.1/Max-Initialized%20Decremental%20Search#-execution-trace)
 
 ## ⚙️ Implementation Stack
