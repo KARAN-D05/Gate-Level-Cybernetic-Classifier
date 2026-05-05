@@ -10,8 +10,10 @@
 </p>
 
 <p align="center">
-  🤖 Cybernetic adaptive learning system implementing MIDS algorithm (Detector_v1.1)
+  🤖 Cybernetic adaptive learning system implementing MIDS algorithm (Detector_v1.1) 
 </p>
+
+(Execution Trace)[https://github.com/KARAN-D05/Gate-Level-Perceptron/tree/main/Detector_v1.1/Max-Initialized%20Decremental%20Search#-execution-trace]
 
 ## ⚙️ Implementation Stack
 ![Verilog](https://img.shields.io/badge/Verilog-FFEA00?style=for-the-badge&logoColor=black)
