@@ -22,7 +22,7 @@ No incrementer, no thinking module, no state awareness required.
 correction speed.
 
 <p align="center">
-  <img src="Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning.gif" alt="Adaptive Learning Demonstration" width="1500">
+  <img src="Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning-16Hz.gif" alt="Adaptive Learning Demonstration" width="1500">
 </p>
 
 <p align="center">
