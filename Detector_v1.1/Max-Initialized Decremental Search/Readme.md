@@ -96,3 +96,11 @@ MIDS is guaranteed to hit the required flipping threshold in finite steps
   - M = 0: Non-recognition always. No meaningful flip desired.
   - M = 16: Recognition always. No meaningful flip desired.
   - In both cases, no decision boundary exists within the threshold space, hence no correction is possible or required.
+
+<p align="center">
+  <img src="Videos/No%20Corrective%20Decision%20Boundary.gif" alt="Adaptive Learning Demonstration" width="1500">
+</p>
+
+<p align="center">
+  System Unable to converge due to non-existence of decision boundary for M=16
+</p>
