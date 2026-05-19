@@ -26,8 +26,6 @@
 - Make Clear Success Flag pin and Clear Convergence Detectors 
   Pin low.
 
----
-
 ## Using the System
 
 - Enter an input and reference pattern on the respective grids 
@@ -55,8 +53,6 @@
 - For successive correction clear the Success Flag and the system 
   is ready for the next adaptation cycle.
 
----
-
 ## System Indicators
 
 | Indicator | State | Meaning |
@@ -66,8 +62,6 @@
 | CORRECTION | HIGH | Correction sequence completed successfully |
 | Hazard Detected | HIGH | Timing glitch detected during correction traversal |
 | Hazard Nullified | HIGH | Glitch suppressed, traversal continuing correctly |
-
----
 
 ## Hazard Detection and Suppression
 
@@ -108,8 +102,6 @@ behavior, not a system failure.
 The correction sequence reaches the correct flipping threshold 
 despite the glitch. The system self-recovers without corrupting 
 its traversal state.
-
----
 
 ## Edge Cases and System Boundaries
 
