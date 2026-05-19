@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-   <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm [16 Hz Clock]
+   <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
 </p>
 
 ## ⚙️ Implementation Stack
