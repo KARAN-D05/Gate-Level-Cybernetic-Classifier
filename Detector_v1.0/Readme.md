@@ -92,3 +92,5 @@
 ## 💡One Step Closer to Self-Learning Machines.....
 - Instead of perfect equivalence check here we judge based on the score or the number of matched pixels, comparing them to a threshold.
 - It is a proof of Concept for self learning machines, in which they can based on feedback adjust their threshold values automatically until they converge to a threshold that correctly classifies input patterns.
+
+[Adaptive Learning System](https://github.com/KARAN-D05/Gate-Level-Perceptron/tree/main/Detector_v1.1) - Capable of autonomously altering its decision boundary based on error feedback.
