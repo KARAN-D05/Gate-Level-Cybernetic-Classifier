@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
- <sub></b> Detector recognize super-pattern
+  <sub></b> Detector recognize super-pattern
 </p>
 
 ## ⚙️Mechanism
