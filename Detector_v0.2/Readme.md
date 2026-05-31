@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  Detector recognize super-pattern
+ <sub></b> Detector recognize super-pattern
 </p>
 
 ## ⚙️Mechanism
@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-  Detector recognize anti-pattern
+ <sub></b> Detector recognize anti-pattern
 </p>
 
 ## ⚠️Limitations
