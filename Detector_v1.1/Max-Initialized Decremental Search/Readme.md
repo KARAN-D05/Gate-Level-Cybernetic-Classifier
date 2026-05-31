@@ -26,7 +26,7 @@ correction speed.
 </p>
 
 <p align="center">
-  🤖 Cybernetic self-learning adaptive system implementing MIDS algorithm - Operating at 16 Hz Clock and autonomously altering its decision boundary while detecting and supressing the timing hazard
+  <sub></b> 🤖 Cybernetic self-learning adaptive system implementing MIDS algorithm - Operating at 16 Hz Clock and autonomously altering its decision boundary while detecting and supressing the timing hazard
 </p>
 
 ```
@@ -102,5 +102,5 @@ MIDS is guaranteed to hit the required flipping threshold in finite steps
 </p>
 
 <p align="center">
-  System Unable to converge due to non-existence of decision boundary for M=16
+  <sub></b> System Unable to converge due to non-existence of decision boundary for M=16
 </p>
