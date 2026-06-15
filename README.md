@@ -136,6 +136,13 @@ To verify hardware realizability, all detector variants were synthesized using *
 
 > All detector variants were successfully synthesized using Yosys.
 
+<div align="center">
+    <img src="Detector_v1.0/images/yosys-synthesis.png" 
+         alt="RTL-Synthesis" 
+         width="1500">
+    <sub></b> <p> Detector_v1.0 Synthesized - Yosys ✅ </p>
+</div>
+
 ## 🛠️Current Development:
 - Stage 2 in progress - MIDS: Developed ✓ | SATU: In Development
 
