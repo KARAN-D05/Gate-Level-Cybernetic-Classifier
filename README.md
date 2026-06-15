@@ -139,7 +139,7 @@ To verify hardware realizability, all detector variants were synthesized using *
 <div align="center">
     <img src="Detector_v1.0/images/yosys-synthesis.png" 
          alt="RTL-Synthesis" 
-         width="1500">
+         width="2500">
     <sub></b> <p> Detector_v1.0 Synthesized - Yosys ✅ </p>
 </div>
 
