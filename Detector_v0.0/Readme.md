@@ -53,7 +53,6 @@
 - Looks for perfect equivalence between input and filtered output.
 - No way to change its decision output without changing its structural wiring.
 - No scoring or noise tolerance - expects clean inputs.
-- My attempt at a perceptron ended up as a binary pixel filter + comparator. **Basically v0.0 is a machine the George Orwell's 1984 Thought Police would approve of 😂**.
 
 ## 🔮Next Version 
 - Alters the Mathematical behaviour of current version(A<sub>rc</sub> &subseteq; W<sub>rc</sub>) for recognition to A<sub>rc</sub> ⊇ W<sub>rc</sub>.
