@@ -122,7 +122,7 @@ To verify hardware realizability, all detector variants were synthesized using *
 | Detector v0.0 | **Eq/Sub Recognizer**    |  **8** | 3 AND, 2 NOT, OR, Reduction-AND                    | Recognizes exact matches and input sub-patterns of the reference pattern   |
 | Detector v0.1 | **Eq/Super Recognizer**  |  **8** | 3 AND, 2 NOT, OR, Reduction-AND                    | Recognizes exact matches and input super-patterns of the reference pattern |
 | Detector v0.2 | **Multi-POV Classifier** | **28** | Dual Recognition Engines, Decision Logic, 11 MUXes | Classifies input-reference relationships as SUB, SUPER, EQ, or ANTI        |
-| Detector v1.0 | **Popcount Judgement**   | **22** | 15 Adders, Comparator, Threshold Logic             | Similarity-based recognition with a manually alterable decision boundary   |
+| Detector v1.0 | **Popcount-based Judgement**   | **22** | 15 Adders, Comparator, Threshold Logic             | Similarity-based recognition with a manually alterable decision boundary   |
 
 ### 🏆 Synthesis Highlights
 
@@ -130,7 +130,7 @@ To verify hardware realizability, all detector variants were synthesized using *
 | ---------------------------------- | ------------------------------- |
 | Smallest Design                    | Eq/Sub Recognizer (8 cells)     |
 | Smallest Design                    | Eq/Super Recognizer (8 cells)   |
-| Most Arithmetic-Heavy              | Popcount Recognizer (15 adders) |
+| Most Arithmetic-Heavy              | Popcount-based Judgement (15 adders) |
 | Most Decision-Heavy                | Multi-POV Classifier (11 MUXes) |
 | Largest Design                     | Multi-POV Classifier (28 cells) |
 
