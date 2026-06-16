@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/yosys-synthesis.png" alt="Netlist" width="2000">
+  <img src="images/yosys-synthesis.png" alt="Netlist" width="1000">
 </p>
 
 <p align="center">
