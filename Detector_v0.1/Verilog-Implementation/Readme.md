@@ -1,4 +1,12 @@
 <p align="center">
+  <img src="images/yosys-synthesis.png" alt="Netlist" width="2000">
+</p>
+
+<p align="center">
+  RTL Synthesis
+</p>
+
+<p align="center">
   <img src="images/waveform.png" alt="Pattern Detector_v0.1 Output" width="2000">
 </p>
 
