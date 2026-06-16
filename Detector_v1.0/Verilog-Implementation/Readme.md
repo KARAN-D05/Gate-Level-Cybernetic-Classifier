@@ -1,4 +1,12 @@
 <p align="center">
+  <img src="images/yosys-synthesis.png" alt="Netlist" width="1000">
+</p>
+
+<p align="center">
+  RTL Synthesis
+</p>
+
+<p align="center">
   <img src="images/waveform.png" alt="Manually-Alterable Decision Boundary" width="2000">
 </p>
 
