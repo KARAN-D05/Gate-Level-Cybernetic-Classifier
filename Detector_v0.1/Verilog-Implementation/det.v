@@ -1,6 +1,4 @@
-// ======================================================================
 //  eq_super_recognition - Detects Equivalence and super-patterns (v0.1)
-// ======================================================================
 
 module eq_super_recognition(
     input [15:0] in,         // 4*4 Input Grid
