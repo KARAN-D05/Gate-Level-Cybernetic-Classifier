@@ -1,6 +1,4 @@
-// =================================================================
 //  eq_sub_recognition - Detects Equivalence and sub-patterns (v0.0)
-// =================================================================
 
 module eq_sub_recognition(
     input [15:0] in,        // 4*4 Input Grid     
