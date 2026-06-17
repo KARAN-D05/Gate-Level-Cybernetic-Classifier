@@ -1,6 +1,4 @@
-// ======================================================================================================
 //  Popcount based decision-making + manually alterable decision boundary using variable threshold (v1.0)
-// ======================================================================================================
 
 module popcount (
   input [15:0] in,       // 4*4 Input Grid represented as a 16-Bit Vector
