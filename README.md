@@ -11,14 +11,15 @@
 </p>
 
 ## ⚙️ Implementation Stack
-![Verilog](https://img.shields.io/badge/Verilog-FFEA00?style=for-the-badge&logoColor=black)
-![Logisim Circuits](https://img.shields.io/badge/Logisim%20Circuits-00C853?style=for-the-badge)
+![Verilog](https://img.shields.io/badge/Verilog-RTL-FFEA00?style=flat-square&logoColor=black)
+![Logisim Circuits](https://img.shields.io/badge/Logisim%20Circuits-Prototyping-00C853?style=flat-square)
 
 ## 🛠️ Toolchain
-![Icarus Verilog](https://img.shields.io/badge/Icarus%20Verilog-1E88E5?style=for-the-badge)
-![GTKWave](https://img.shields.io/badge/GTKWave-8E24AA?style=for-the-badge)
-![Yosys](https://img.shields.io/badge/Yosys-F4511E?style=for-the-badge)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
+![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
+![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
+![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
+![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
 
 ## 📈 Planned Progression
 - **Stage 0 (v0.x)**: Strict Boolean pattern relation analyzer. No learning, no noise tolerance, decision boundaries fixed by structural wiring.
