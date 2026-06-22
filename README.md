@@ -111,30 +111,37 @@
     <sub></b> <p> Manually Alterable Decision Boundary ⚖️ </p>
 </div>
 
-## 🔬 RTL Synthesis Results (Yosys)
+## 🔬 RTL Synthesis, Timing and Power Analysis
 
-To verify hardware realizability, all detector variants were synthesized using **Yosys**. The resulting gate-level netlists were analyzed to compare architectural complexity and resource utilization across the evolution of the Cybernetic Classifier.
+To verify hardware realizability, all detector variants were synthesized using **Yosys**, technology mapped to the **Sky130HD standard-cell library**, and analyzed using **static timing** and **power estimation**. The resulting gate-level netlists were used to compare architectural complexity, silicon area, timing characteristics, power consumption, and estimated operating frequency across the evolution of the Cybernetic Classifier.
 
-### 📊 RTL Synthesis Comparison
+> Technology: Sky130HD
 
-| Version       | Module                   |  Cells | Key Hardware Structures                            | Purpose                                                                    |
-| ------------- | ------------------------ | -----: | -------------------------------------------------- | -------------------------------------------------------------------------- |
-| Detector v0.0 | **Eq/Sub Recognizer**    |  **8** | 3 AND, 2 NOT, OR, Reduction-AND                    | Recognizes exact matches and input sub-patterns of the reference pattern   |
-| Detector v0.1 | **Eq/Super Recognizer**  |  **8** | 3 AND, 2 NOT, OR, Reduction-AND                    | Recognizes exact matches and input super-patterns of the reference pattern |
-| Detector v0.2 | **Multi-POV Classifier** | **28** | Dual Recognition Engines, Decision Logic, 11 MUXes | Classifies input-reference relationships as SUB, SUPER, EQ, or ANTI        |
-| Detector v1.0 | **Pop-Count Recognition**| **22** | 15 Adders, Comparator, Threshold Logic             | Similarity-based recognition with a manually alterable decision boundary   |
+### 📊 Implementation Metrics Comparison
 
-### 🏆 Synthesis Highlights
+| Version       | Module                   |  Cells | Area | Critical Path Delay | Power | Key Hardware Structures                           |                                                                    
+| ------------- | ------------------------ | -----: | ------ | ----- | ----- | -------------------------------------------------- | 
+| Detector v0.0 | **Eq/Sub Recognizer**    |  **8** | 127.6224 µm² | 0.46 ns | 30.8 µW | 3 AND, 2 NOT, OR, Reduction-AND                    | 
+| Detector v0.1 | **Eq/Super Recognizer**  |  **8** | 127.6224 µm² | 0.46 ns | 30.8 µW | 3 AND, 2 NOT, OR, Reduction-AND                    | 
+| Detector v0.2 | **Multi-POV Classifier** | **28** | 230.2208 µm² | 1.16 ns | 60.6 µW | Dual Recognition Engines, Decision Logic, 11 MUXes |
+| Detector v1.0 | **Pop-Count Recognition**| **22** | 970.9312 µm² | 4.58 ns | 599 µW | 15 Adders, Comparator, Threshold Logic             | 
 
-| Category                           | Result                          |
-| ---------------------------------- | ------------------------------- |
-| Smallest Design                    | Eq/Sub Recognizer (8 cells)     |
-| Smallest Design                    | Eq/Super Recognizer (8 cells)   |
-| Most Arithmetic-Heavy              | Pop-Count Recognition (15 adders) |
-| Most Decision-Heavy                | Multi-POV Classifier (11 MUXes) |
-| Largest Design                     | Multi-POV Classifier (28 cells) |
+### 🏆 Implementation Highlights
 
-> All detector variants were successfully synthesized using Yosys.
+| Category                          | Result                                                                          |
+| --------------------------------- | ------------------------------------------------------------------------------- |
+| Smallest Design                   | Eq/Sub Recognizer (127.62 µm²n)                              |
+| Smallest Design                   | Eq/Super Recognizer (127.62 µm²)                            |
+| Largest Design                    | Pop-Count Recognition (970.93 µm²)                                    |
+| Fastest Design                    | Eq/Sub Recognizer (Fmax ≈ 1/0.46 ns ≈ 2.17 GHz)    |
+| Fastest Design                    | Eq/Super Recognizer (Fmax ≈ 1/0.46 ns ≈ 2.17 GHz)  |
+| Slowest Design                    | Pop-Count Recognition (Fmax ≈ 1/4.58 ns ≈ 218 MHz) |
+| Lowest Power                      | Eq/Sub Recognizer (30.8 µW)                                                     |
+| Lowest Power                      | Eq/Super Recognizer (30.8 µW)                                                   |
+| Highest Power                     | Pop-Count Recognition (599 µW)                                                  |
+| Most Arithmetic-Heavy             | Pop-Count Recognition (15 Adders, Comparator, Threshold Logic)                  |
+| Most Decision-Heavy               | Multi-POV Classifier (11 MUXes)                                                 |
+| Largest Cell Count                | Multi-POV Classifier (28 Cells)                                                 |
 
 <div align="center">
     <img src="Detector_v1.0/Verilog-Implementation/images/yosys-synthesis.png" 
