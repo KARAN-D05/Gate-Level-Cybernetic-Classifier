@@ -25,7 +25,7 @@
 - **Stage 0 (v0.x)**: Strict Boolean pattern relation analyzer. No learning, no noise tolerance, decision boundaries fixed by structural wiring.
 - **Stage 1 (v1.0)**: Popcount based similarity and a variable threshold to alter the decision boundary. Introduces noise tolerance and ability to change the decision output without structural changes.
 - **Stage 2 (v1.1)**: Cybernetic Feedback-driven adaptive learning. System alters its decision boundary based on external feedback to correct its decision output.
-   - [MIDS Algorithm](Detector_v1.1/Max-Initialized%20Decremental%20Search)  **`⟵ DEVELOPED`**
+   - [MIDS Algorithm](Detector_v1.1/Max-Initialized%20Decremental%20Search)
    - [SATU Algorithm ](Detector_v1.1/State%20Aware%20Threshold%20Update) 
 
 ## 🧱 Versions Built
@@ -57,6 +57,7 @@
 | Direction | Always starts from max, decrements | Sets to M or M-1 as needed |
 | Initialization Bias | Instant correction for false positives | None |
 | Hardware Complexity | Low - decrementer only | Higher - decrementer + decision logic |
+| Circuit Type | Sequential | Combinational |
 | Guaranteed Convergence | Yes | Yes |
 
 ### 🎯 Convergence Proofs
