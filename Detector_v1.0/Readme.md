@@ -1,5 +1,5 @@
 # 📊 POP-Count Based Detector - V1.0
-- It recognizes the pattern if the number of `Matched Pixels (M)` are greater than the set `Threshold(θ)`
+- It recognizes the pattern if the number of `Matched Pixels (M)` are greater than the `Threshold(θ)`
 - Unlike the perfect equivalence check we have set a threshold above which the pattern is recognized and the threshold can vary thus allowing us to alter the system decision boundary.
 - **Images of circuit below represent this capability of the system, both images have same set of input and reference pattern but based on different values of threshold, decision output of system is different.**
 
