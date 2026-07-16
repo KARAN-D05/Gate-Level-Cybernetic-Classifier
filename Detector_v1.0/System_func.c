@@ -28,7 +28,7 @@ int main() {
 
     printf("System Activation Function: R(M, T) = 1 if M > T, else 0\n");
 
-    printf("Enter threshold (0–16): ");
+    printf("Enter threshold (0-16): ");
     scanf("%d", &threshold);
 
     printf("Enter 16 binary values (0 or 1):\n");
