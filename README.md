@@ -10,6 +10,8 @@
    <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
 </p>
 
+> The comparator output exhibited a transient dynamic hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
+
 ## ⚙️ Implementation Stack
 ![Verilog](https://img.shields.io/badge/Verilog-RTL-FFEA00?style=flat-square&logoColor=black)
 ![Logisim Circuits](https://img.shields.io/badge/Logisim%20Circuits-Prototyping-00C853?style=flat-square)
@@ -37,8 +39,7 @@
 - **`Version 1`**: Pop-count based judgement against a variable Threshold instead of perfect equivalence check and cybernetic feedback-driven adaptive learning. 
   - [Detector_v1.0](Detector_v1.0) -> Recognizes the pattern if total number of matched pixels are greater than the set threshold which can vary giving us ability to control the decision output.
   - [Detector_v1.1](Detector_v1.1) -> A feedback-driven adaptive system that autonomously adjusts its decision boundary to correct its output, using algorithms optimized for hardware constraints.
-> The comparator output exhibited a transient dynamic hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
-    
+  
 <p align="center">
   <img src="Detector_v1.0/images/Block-Diagram.png" alt="Block-Diagram" width="900">
 </p>
