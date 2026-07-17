@@ -10,7 +10,7 @@
    <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
 </p>
 
-> The comparator output exhibited a transient dynamic hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
+> The comparator output exhibited a static hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
 
 ## ⚙️ Implementation Stack
 ![Verilog](https://img.shields.io/badge/Verilog-RTL-FFEA00?style=flat-square&logoColor=black)
