@@ -153,9 +153,6 @@ To verify hardware realizability, all detector variants were synthesized using *
     <sub></b> <p> Detector_v1.0 Synthesized - Yosys ✅ </p>
 </div>
 
-## 🛠️Current Development:
-- Stage 2 in progress - MIDS: Developed ✓ | SATU: In Development
-
 ## 📜License
 - Source code and HDL files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
