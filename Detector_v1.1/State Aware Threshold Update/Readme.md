@@ -25,7 +25,7 @@ and desired state. Higher area and logical complexity than MIDS.
 hardware complexity and silicon area.
 
 <p align="center">
-  <img src="videos/Cybernetic_Adaptive_Learning_SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
+  <img src="videos/Cybernetic_Adaptive_Learning-SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
 </p>
 
 <p align="center">
