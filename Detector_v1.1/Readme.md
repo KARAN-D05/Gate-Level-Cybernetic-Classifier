@@ -30,5 +30,5 @@
 ## ⏱️ Correction Speed Complexity Comparison
 
 <p align="center">
-  <img src="images/Speed_Complexity.png" alt="Speed-Complexity" width="600">
+  <img src="images/Speed_Complexity.png" alt="Speed-Complexity" width="650">
 </p>
