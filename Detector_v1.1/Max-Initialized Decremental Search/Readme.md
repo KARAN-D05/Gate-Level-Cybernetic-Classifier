@@ -102,5 +102,5 @@ MIDS is guaranteed to hit the required flipping threshold in finite steps
 </p>
 
 <p align="center">
-  <sub></b> System Unable to converge due to non-existence of decision boundary for M=16
+  <sub></b> System unable to converge due to non-existence of decision boundary for M=16
 </p>
