@@ -74,7 +74,7 @@
 | Traversal Logic | Required | Not required |
 | Synchronization | Multiple synchronization requirements | Single synchronizer |
 | Control Hardware | Large control loop coordinating traversal | Simpler control path |
-| Initialization | threshold memory programming and setup sequence | No Initialization Required |
+| Initialization | threshold memory programming | No Initialization Required |
 | Hardware Complexity | Higher | Lower |
 | External Setup Complexity | Higher | Very low |
 | Guaranteed Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
