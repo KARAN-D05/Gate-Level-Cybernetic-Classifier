@@ -67,18 +67,15 @@
 | Property | MIDS | SATU |
 |---|---|---|
 | Correction Speed | O(N)  | O(1)  |
-| State Awareness | Output/error aware only | State-aware |
+| State Awareness | None | Current & desired output |
 | Correction Strategy | Iterative threshold traversal | Direct threshold computation |
 | Direction | Starts from maximum threshold and decrements until output flips | Computes `T = M−1` for recognition or `T = M` for non-recognition |
 | Threshold Storage | Requires threshold memory | No threshold memory required |
 | Traversal Logic | Required | Not required |
-| Counter | Required for controlled traversal | Not required |
 | Synchronization | Multiple synchronization requirements for initialization | Single synchronizer |
-| Control Hardware | Relatively large control loop coordinating traversal | Much simpler control path |
-| Memory Initialization | Requires explicit threshold-memory programming and initialization procedure | Not required |
-| Initialization Procedure | Non-trivial; requires programmed threshold memory and correct setup sequence | Minimal; start the system and provide the required inputs |
+| Control Hardware | Large control loop coordinating traversal | Simpler control path |
+| Initialization Procedure | Requires programmed threshold memory and correct setup sequence | Start the system and provide the required inputs |
 | Hardware Complexity | Higher | Lower |
-| Information Used | Limited information; correction proceeds through search | Rich internal state information enables direct computation |
 | Initialization Bias | Instant correction for false positives | None |
 | Guaranteed Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
 | Algorithmic Principle | Search for the boundary | Compute the boundary |
