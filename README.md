@@ -69,7 +69,7 @@
 | Correction Speed | O(N) | O(1) |
 | State Awareness | None | Current & desired output |
 | Correction Strategy | Iterative threshold traversal | Direct threshold computation |
-| Direction | Starts from maximum threshold and decrements | Computes `T = M−1` or `T = M` |
+| Direction | Starts from maximum threshold and decrements | Computes `T = M−1` or `T = M` directly |
 | Threshold Storage | Requires threshold memory | No threshold memory required |
 | Traversal Logic | Required | Not required |
 | Synchronization | Multiple synchronization requirements | Single synchronizer |
