@@ -66,12 +66,25 @@
 
 | Property | MIDS | SATU |
 |---|---|---|
-| Correction Speed | O(N) | O(1) |
-| State Awareness | None | Current & desired output |
-| Direction | Always starts from max, decrements | Sets to M or M-1 as needed |
-| Initialization Bias | Instant correction for false positives | None |
-| Hardware Complexity | Low - decrementer only | Higher - decrementer + decision logic |
-| Guaranteed Convergence | Yes | Yes |
+| Correction Speed | O(N) - traverses threshold space | O(1) - directly computes decision boundary |
+| State Awareness | Output/error aware only; does not directly use the current match score to compute the boundary | State-aware; directly uses match score `M` and desired output to determine the required threshold |
+| Correction Strategy | Iterative threshold traversal | Direct threshold computation |
+| Direction | Starts from maximum threshold and decrements until output flips | Computes `T = M−1` for recognition or `T = M` for non-recognition |
+| Threshold Storage | Requires threshold memory | No threshold memory required for correction |
+| Search / Traversal Logic | Required | Not required |
+| Counter | Required for controlled traversal/timing | Not required |
+| Synchronization | Multiple synchronization requirements for memory, threshold loading and control | Single synchronizer |
+| Control Hardware | Relatively large control loop coordinating traversal, memory, convergence and re-evaluation | Much simpler control path; computation directly determines the new threshold |
+| Memory Initialization | Requires explicit threshold-memory programming and initialization procedure | No threshold-memory programming required |
+| Initialization Procedure | Non-trivial; requires programmed threshold memory and correct setup sequence | Minimal; start the system and provide the required inputs |
+| External Setup Complexity | Higher | Very low |
+| Hardware Complexity | Higher than initially estimated; multiple modules, threshold memory, traversal logic, counters and synchronizers | Lower; primarily threshold decision/computation logic and minimal synchronization |
+| Information Used | Limited information; correction proceeds through search | Rich internal state information enables direct computation |
+|  Initialization Bias | Instant correction for false positives | None |
+| Convergence | Guaranteed under the defined threshold space | Guaranteed under the defined decision boundary |
+| Algorithmic Principle | Search for the boundary | Compute the boundary |
+| Hardware Philosophy | More control/state required to compensate for limited information | More information enables simpler control |
+| Practical Usability | Requires explicit system initialization/programming | Essentially clock-and-go operation |
 
 ### 🎯 Convergence Proofs
 - [MIDS Convergence Proof](https://github.com/KARAN-D05/Gate-Level-Cybernetic-Classifier/tree/main/Detector_v1.1/Max-Initialized%20Decremental%20Search#-convergence-proof)
