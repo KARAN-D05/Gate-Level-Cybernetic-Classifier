@@ -13,7 +13,7 @@
 > The comparator output exhibited a static hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
 
 <p align="center">
-  <img src="Detector_v1.1/State%20Aware%20Threshold%20Update/videos/Cybernetic_Adaptive_Learning_SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
+  <img src="Detector_v1.1/State%20Aware%20Threshold%20Update/videos/Cybernetic_Adaptive_Learning-SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
 </p>
 
 <p align="center">
