@@ -24,6 +24,14 @@ and desired state. Higher area and logical complexity than MIDS.
 - **Tradeoff:** Maximum correction speed at the cost of additional 
 hardware complexity and silicon area.
 
+<p align="center">
+  <img src="videos/Cybernetic_Adaptive_Learning_SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
+</p>
+
+<p align="center">
+  <sub></b> 🤖 Cybernetic adaptive system implementing SATU algorithm - Operating at 16 Hz Clock and autonomously altering its decision boundary with O(1) Time Complexity 
+</p>
+
 ## 🎛️ Initialization Bias
 - SATU has no initialization bias, as it directly computes the required threshold from M: θ=M (non-recognition) or θ=M−1 (recognition).
 
