@@ -167,8 +167,8 @@ To verify hardware realizability, all detector variants were synthesized using *
 | Detector v0.1 | **Eq/Super Recognizer**   |      127.6224 µm² |             0.46 ns |     30.8 µW | 
 | Detector v0.2 | **Multi-POV Classifier**  |      230.2208 µm² |             1.16 ns |     60.6 µW | 
 | Detector v1.0 | **Pop-Count Recognition** |      970.9312 µm² |             4.58 ns |      599 µW | 
-| MIDS      | **MIDS**                  |  1244.944 µm² |         1.76 ns |  833 µW | 
-| SATU     | **SATU**                  | 1178.6304 µm² |         2.09 ns | 1.10 mW |
+| Detector v1.1      | **MIDS**                  |  1244.944 µm² |         1.76 ns |  833 µW | 
+| Detector v1.1    | **SATU**                  | 1178.6304 µm² |         2.09 ns | 1.10 mW |
 
 ### 🏆 Implementation Highlights
 
