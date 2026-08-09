@@ -113,9 +113,3 @@ This strict inequality introduces an asymmetry in how the decision boundary is c
 | Control FSM | Determine direction (up/down) | Determine desired output state |
 
 **Result:** Reduced gate count and simplified control logic with no loss of functionality.
-
-### Conclusion
-
-The choice of a strict inequality in the activation function encodes an asymmetry that aligns precisely with minimal hardware requirements.
-
-SATU achieves single-cycle adaptation using only a decrementer and a load path demonstrating a direct alignment between mathematical structure and circuit-level efficiency.
