@@ -1,16 +1,24 @@
 # 🔁 Gate-Level Cybernetic Classifier
 
-  - A feedback-driven adaptive learning binary-classifier that based on error input autonomously alters its decision boundary by implementing [Max-Initialized Decremental Search](Detector_v1.1/Max-Initialized%20Decremental%20Search) (MIDS) and resets the control loop for repeated adaptive cycles.
+  - A feedback-driven adaptive learning binary-classifier that based on error input autonomously alters its decision boundary by implementing [Max-Initialized Decremental Search](Detector_v1.1/Max-Initialized%20Decremental%20Search) (MIDS)/ [State Aware Threshold Update](Detector_v1.1/State%20Aware%20Threshold%20Update) and resets the control loop for repeated adaptive cycles.
 
 <p align="center">
   <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning-16Hz.gif" alt="Adaptive Learning Demonstration" width="1500">
 </p>
 
 <p align="center">
-   <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
+   <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm - **O(N)**
 </p>
 
 > The comparator output exhibited a static hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
+
+<p align="center">
+  <img src="videos/Cybernetic_Adaptive_Learning_SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
+</p>
+
+<p align="center">
+  <sub></b> 🤖 Adaptive learning system implementing SATU algorithm - **O(1)**
+</p>
 
 ## ⚙️ Implementation Stack
 ![Verilog](https://img.shields.io/badge/Verilog-RTL-FFEA00?style=flat-square&logoColor=black)
