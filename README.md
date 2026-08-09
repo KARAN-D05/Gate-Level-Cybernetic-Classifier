@@ -139,31 +139,35 @@ To verify hardware realizability, all detector variants were synthesized using *
 
 > Technology: Sky130HD
 
-### 📊 Implementation Metrics Comparison
+### 📊 Implementation Metrics Comparison 
 
-| Version       | Module                   |  Cells | Area | Critical Path Delay | Power | Key Hardware Structures                           |                                                                    
-| ------------- | ------------------------ | -----: | ------ | ----- | ----- | -------------------------------------------------- | 
-| Detector v0.0 | **Eq/Sub Recognizer**    |  **8** | 127.6224 µm² | 0.46 ns | 30.8 µW | 3 AND, 2 NOT, OR, Reduction-AND                    | 
-| Detector v0.1 | **Eq/Super Recognizer**  |  **8** | 127.6224 µm² | 0.46 ns | 30.8 µW | 3 AND, 2 NOT, OR, Reduction-AND                    | 
-| Detector v0.2 | **Multi-POV Classifier** | **28** | 230.2208 µm² | 1.16 ns | 60.6 µW | Dual Recognition Engines, Decision Logic, 11 MUXes |
-| Detector v1.0 | **Pop-Count Recognition**| **22** | 970.9312 µm² | 4.58 ns | 599 µW | 15 Adders, Comparator, Threshold Logic             | 
+| Version       | Module                    |              Area | Critical Path Delay |       Power |                                                             
+| ------------- | ------------------------- | ---------------- | ------------------ | ---------- | 
+| Detector v0.0 | **Eq/Sub Recognizer**     |      127.6224 µm² |             0.46 ns |     30.8 µW |
+| Detector v0.1 | **Eq/Super Recognizer**   |      127.6224 µm² |             0.46 ns |     30.8 µW | 
+| Detector v0.2 | **Multi-POV Classifier**  |      230.2208 µm² |             1.16 ns |     60.6 µW | 
+| Detector v1.0 | **Pop-Count Recognition** |      970.9312 µm² |             4.58 ns |      599 µW | 
+| MIDS      | **MIDS**                  |  1244.944 µm² |         1.76 ns |  833 µW | 
+| SATU     | **SATU**                  | 1178.6304 µm² |         2.09 ns | 1.10 mW |
 
 ### 🏆 Implementation Highlights
 
-| Category                          | Result                                                                          |
-| --------------------------------- | ------------------------------------------------------------------------------- |
-| Smallest Design                   | Eq/Sub Recognizer (127.62 µm²n)                              |
-| Smallest Design                   | Eq/Super Recognizer (127.62 µm²)                            |
-| Largest Design                    | Pop-Count Recognition (970.93 µm²)                                    |
-| Fastest Design                    | Eq/Sub Recognizer (Fmax ≈ 1/0.46 ns ≈ 2.17 GHz)    |
-| Fastest Design                    | Eq/Super Recognizer (Fmax ≈ 1/0.46 ns ≈ 2.17 GHz)  |
-| Slowest Design                    | Pop-Count Recognition (Fmax ≈ 1/4.58 ns ≈ 218 MHz) |
-| Lowest Power                      | Eq/Sub Recognizer (30.8 µW)                                                     |
-| Lowest Power                      | Eq/Super Recognizer (30.8 µW)                                                   |
-| Highest Power                     | Pop-Count Recognition (599 µW)                                                  |
-| Most Arithmetic-Heavy             | Pop-Count Recognition (15 Adders, Comparator, Threshold Logic)                  |
-| Most Decision-Heavy               | Multi-POV Classifier (11 MUXes)                                                 |
-| Largest Cell Count                | Multi-POV Classifier (28 Cells)                                                 |
+| Category                | Result                                     |
+| ----------------------- | ------------------------------------------ |
+| Smallest Design         | Eq/Sub & Eq/Super Recognizers (127.62 µm²) |
+| Largest Design          | MIDS (1244.94 µm²)                   |
+| Fastest Design          | Eq/Sub & Eq/Super (0.46 ns)                |
+| Slowest Design          | Pop-Count Recognition (4.58 ns)            |
+| Lowest Power            | Eq/Sub & Eq/Super (30.8 µW)                |
+| Highest Power           | SATU (1.10 mW)                        |
+| Fastest Adaptive Design | MIDS (1.76 ns)                         |
+| MIDS Timing Slack       | 8.11 ns @ 10 ns clock                      |
+| SATU Timing Slack       | 7.79 ns @ 10 ns clock                      |
+| MIDS Fmax              | ≈568 MHz                                   |
+| SATU Fmax             | ≈478 MHz                                   |
+| Most Arithmetic-Heavy   | Pop-Count Recognition (15 Adders)          |
+| Most Decision-Heavy     | Multi-POV Classifier (11 MUXes)           |
+| Largest Cell Count      | Multi-POV Classifier (28 cells)            |
 
 <div align="center">
     <img src="Detector_v1.0/Verilog-Implementation/images/yosys-synthesis.png" 
