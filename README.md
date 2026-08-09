@@ -133,6 +133,22 @@
     <sub></b> <p> Manually Alterable Decision Boundary ⚖️ </p>
 </div>
 
+- [Detector_v1.1](Detector_v1.1/Max-Initialized%20Decremental%20Search/Verilog)
+  <div align="center">
+    <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/images/waveformpng" 
+         alt="Pattern Detector Output" 
+         width="1500">
+    <sub></b> <p> 🤖 Automatic Decision Boundary Alteration - MIDS </p>
+</div>
+
+- [Detector_v1.1](Detector_v1.1/State%20Aware%20Threshold%20Update/Verilog)
+  <div align="center">
+    <img src="Detector_v1.1/State%20Aware%20Threshold%20Update/images/waveform.png" 
+         alt="Pattern Detector Output" 
+         width="1500">
+    <sub></b> <p> 🤖 Automatic Decision Boundary Alteration - SATU </p>
+</div>
+
 ## 🔬 RTL Synthesis, Timing and Power Analysis
 
 To verify hardware realizability, all detector variants were synthesized using **Yosys**, technology mapped to the **Sky130HD standard-cell library**, and analyzed using **static timing** and **power estimation**. The resulting gate-level netlists were used to compare architectural complexity, silicon area, timing characteristics, power consumption, and estimated operating frequency across the evolution of the Cybernetic Classifier.
