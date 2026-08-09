@@ -13,7 +13,7 @@
 | State Awareness | None | Current & desired output |
 | Direction | Always starts from max, decrements | Sets to M or M-1 as needed |
 | Initialization Bias | Instant correction for false positives | None |
-| Hardware Complexity | Low - decrementer only | Higher - decrementer + decision logic |
+| Hardware Complexity | Higher - More Sequential Elements | Lower - Direct Computation |
 | Guaranteed Convergence | Yes | Yes |
 
 ## 🎯 Convergence Proofs
