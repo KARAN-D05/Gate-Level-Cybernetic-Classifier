@@ -76,8 +76,8 @@
 | Control Hardware | Large control loop coordinating traversal | Simpler control path |
 | Initialization | threshold memory programming | No Initialization Required |
 | Hardware Complexity | Higher | Lower |
-| External Setup Complexity | Higher | Very low |
-| Guaranteed Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
+| Setup Complexity | Higher | Very low |
+| Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
 | Algorithmic Principle | Search for the boundary | Compute the boundary |
 
 ### 🎯 Convergence Proofs
