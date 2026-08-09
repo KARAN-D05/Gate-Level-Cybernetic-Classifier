@@ -122,7 +122,7 @@
    <sub></b> <p> Equivalence & Super & Sub & Anti-Pattern Recognition 🔹🟦 </p>
 </div>
 
-### 🔄 Popcount-Based Adaptive Learning
+### 🔄 Manually Alterable Decision Boundary
 
 - [Detector_v1.0](Detector_v1.0/Verilog-Implementation)
 
@@ -132,6 +132,8 @@
          width="1500">
     <sub></b> <p> Manually Alterable Decision Boundary ⚖️ </p>
 </div>
+
+### 🧠 Autonomous Adaptive Learning
 
 - [Detector_v1.1](Detector_v1.1/Max-Initialized%20Decremental%20Search/Verilog)
   <div align="center">
