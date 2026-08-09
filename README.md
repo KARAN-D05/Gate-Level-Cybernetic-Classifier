@@ -136,6 +136,7 @@
 ### 🧠 Autonomous Adaptive Learning
 
 - [Detector_v1.1](Detector_v1.1/Max-Initialized%20Decremental%20Search/Verilog)
+  
   <div align="center">
     <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/images/waveform.png" 
          alt="Pattern Detector Output" 
@@ -144,6 +145,7 @@
 </div>
 
 - [Detector_v1.1](Detector_v1.1/State%20Aware%20Threshold%20Update/Verilog)
+  
   <div align="center">
     <img src="Detector_v1.1/State%20Aware%20Threshold%20Update/images/waveform.png" 
          alt="Pattern Detector Output" 
