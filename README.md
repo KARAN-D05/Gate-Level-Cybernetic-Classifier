@@ -135,7 +135,7 @@
 
 - [Detector_v1.1](Detector_v1.1/Max-Initialized%20Decremental%20Search/Verilog)
   <div align="center">
-    <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/images/waveformpng" 
+    <img src="Detector_v1.1/Max-Initialized%20Decremental%20Search/images/waveform.png" 
          alt="Pattern Detector Output" 
          width="1500">
     <sub></b> <p> 🤖 Automatic Decision Boundary Alteration - MIDS </p>
