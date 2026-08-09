@@ -73,16 +73,15 @@
 | Threshold Storage | Requires threshold memory | No threshold memory required |
 | Traversal Logic | Required | Not required |
 | Counter | Required for controlled traversal | Not required |
-| Synchronization | Multiple synchronization requirements for initialization and control | Single synchronizer |
+| Synchronization | Multiple synchronization requirements for initialization | Single synchronizer |
 | Control Hardware | Relatively large control loop coordinating traversal | Much simpler control path |
 | Memory Initialization | Requires explicit threshold-memory programming and initialization procedure | Not required |
 | Initialization Procedure | Non-trivial; requires programmed threshold memory and correct setup sequence | Minimal; start the system and provide the required inputs |
-| Hardware Complexity | Higher; multiple modules, threshold memory, traversal logic,counters and synchronizers | Lower; primarily threshold decision/computation logic and minimal synchronization |
+| Hardware Complexity | Higher | Lower |
 | Information Used | Limited information; correction proceeds through search | Rich internal state information enables direct computation |
 | Initialization Bias | Instant correction for false positives | None |
 | Guaranteed Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
 | Algorithmic Principle | Search for the boundary | Compute the boundary |
-| Hardware Philosophy | More control/state required to compensate for limited information | More information enables simpler control |
 
 ### 🎯 Convergence Proofs
 - [MIDS Convergence Proof](https://github.com/KARAN-D05/Gate-Level-Cybernetic-Classifier/tree/main/Detector_v1.1/Max-Initialized%20Decremental%20Search#-convergence-proof)
