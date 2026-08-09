@@ -11,10 +11,17 @@
 |---|---|---|
 | Correction Speed | O(N) | O(1) |
 | State Awareness | None | Current & desired output |
-| Direction | Always starts from max, decrements | Sets to M or M-1 as needed |
-| Initialization Bias | Instant correction for false positives | None |
-| Hardware Complexity | Higher - More Sequential Elements | Lower - Direct Computation |
-| Guaranteed Convergence | Yes | Yes |
+| Correction Strategy | Iterative threshold traversal | Direct threshold computation |
+| Direction | Starts from maximum threshold and decrements | Computes `T = M−1` or `T = M` |
+| Threshold Storage | Requires threshold memory | No threshold memory required |
+| Traversal Logic | Required | Not required |
+| Synchronization | Multiple synchronization requirements | Single synchronizer |
+| Control Hardware | Large control loop coordinating traversal | Simpler control path |
+| Initialization | Requires programmed threshold memory and correct setup sequence | Start the system and provide the required inputs |
+| Hardware Complexity | Higher | Lower |
+| External Setup Complexity | Higher | Very low |
+| Guaranteed Convergence | Yes, for M ∈ {1,...,15} | Yes, for M ∈ {1,...,15} |
+| Algorithmic Principle | Search for the boundary | Compute the boundary |
 
 ## 🎯 Convergence Proofs
 - [MIDS Convergence Proof](https://github.com/KARAN-D05/Gate-Level-Perceptron/tree/main/Detector_v1.1/Max-Initialized%20Decremental%20Search#-convergence-proof)
