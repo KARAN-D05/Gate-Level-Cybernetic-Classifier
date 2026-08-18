@@ -85,10 +85,9 @@ This generates a strictly decreasing sequence:
 
 Since:
 θ traverses all values in [15→0] and DFS⁺(M), DFS⁻(M) ⊆ {0, ..., 15}
-MIDS is guaranteed to hit the required flipping threshold in finite steps
+MIDS is guaranteed to hit the required flipping threshold in finite steps.
 
 ```
-
 - Since a valid decision-flipping threshold always exists for all valid M, and MIDS monotonically traverses the entire threshold space, the algorithm is guaranteed to reach a flipping point in finite time. Therefore, MIDS always converges.
 - Worst-case convergence occurs when the flipping threshold is at θ = 0, yielding O(N) complexity where N is the threshold range.
 
