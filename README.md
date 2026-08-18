@@ -12,8 +12,6 @@
    <sub></b> 🤖 Adaptive learning system implementing MIDS algorithm
 </p>
 
-> The comparator output exhibited a static hazard due to unequal propagation delays on the threshold update signals. Since the edge-detection circuitry monitored transitions continuously, the transient pulse was interpreted as a legitimate boundary crossing. A hazard detection mechanism was therefore added to invalidate simultaneous activation of both edge detectors, preventing false convergence.
-
 ## ⚡State Aware Threshold Update - O(1)
 
 <p align="center">
