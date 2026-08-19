@@ -194,6 +194,19 @@ To verify hardware realizability, all detector variants were synthesized using *
     <sub></b> <p> Detector_v1.0 Synthesized - Yosys ✅ </p>
 </div>
 
+## 🗄️ Adaptation vs. Retention
+
+The current architecture demonstrates adaptation without persistent memory. When feedback indicates an incorrect decision, the system modifies its internal threshold state, thereby changing its future decision boundary. This change of state in response to feedback is the adaptation mechanism itself; persistent memory is not a prerequisite for adaptive behavior.
+
+A possible extension is memory-assisted retention, where the input/reference pattern and its learned threshold are stored in memory. When the same or a previously encountered pattern appears again, the corresponding threshold could be retrieved rather than relearned. This would allow the system to retain multiple learned states across different patterns.
+
+Thus, the two concepts are distinct:
+
+Adaptation: changing the system's state in response to feedback.
+Retention: preserving that adapted state for later retrieval.
+
+The current project focuses deliberately on adaptation and cybernetic feedback, while persistent retention is left as a possible architectural extension.
+
 ## 📜License
 - Source code and HDL files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
