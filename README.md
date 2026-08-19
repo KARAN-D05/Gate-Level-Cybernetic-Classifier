@@ -22,11 +22,8 @@
   <sub></b> 🤖 Adaptive learning system implementing SATU algorithm
 </p>
 
-## ⚙️ Implementation Stack
-![Verilog](https://img.shields.io/badge/Verilog-RTL-FFEA00?style=flat-square&logoColor=black)
-![Logisim Circuits](https://img.shields.io/badge/Logisim%20Circuits-Prototyping-00C853?style=flat-square)
-
 ## 🛠️ Toolchain
+![Logisim Circuits](https://img.shields.io/badge/Logisim%20Circuits-Prototyping-00C853?style=flat-square)
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
 ![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
