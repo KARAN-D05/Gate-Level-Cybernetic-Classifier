@@ -15,12 +15,6 @@ bounded search from ceiling to correction.
 - **Complexity:** O(N) - worst case 15 clock cycles if correction 
 occurs at threshold 0.
 
-- **Hardware:** Minimal - a decrementer and a cell pointer. 
-No incrementer, no thinking module, no state awareness required.
-
-- **Tradeoff:** Simplicity and minimal area at the cost of 
-correction speed.
-
 <p align="center">
   <img src="Videos/Cybernetic%20Feedback%20Driven%20Adaptive%20Learning-16Hz.gif" alt="Adaptive Learning Demonstration" width="1500">
 </p>
