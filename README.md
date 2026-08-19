@@ -196,16 +196,15 @@ To verify hardware realizability, all detector variants were synthesized using *
 
 ## 🗄️ Adaptation vs. Retention
 
-The current architecture demonstrates adaptation without persistent memory. When feedback indicates an incorrect decision, the system modifies its internal threshold state, thereby changing its future decision boundary. This change of state in response to feedback is the adaptation mechanism itself; persistent memory is not a prerequisite for adaptive behavior.
+The current architecture demonstrates adaptation without persistent memory. When feedback indicating an incorrect decision, the system modifies its internal threshold state, thereby changing its future decision boundary. This change of state in response to feedback is the adaptation mechanism itself, **persistent memory is not a prerequisite for adaptive behavior.**
 
 A possible extension is memory-assisted retention, where the input/reference pattern and its learned threshold are stored in memory. When the same or a previously encountered pattern appears again, the corresponding threshold could be retrieved rather than relearned. This would allow the system to retain multiple learned states across different patterns.
 
 Thus, the two concepts are distinct:
+- Adaptation: changing the system's state in response to feedback.
+- Retention: preserving that adapted state for later retrieval.
 
-Adaptation: changing the system's state in response to feedback.
-Retention: preserving that adapted state for later retrieval.
-
-The current project focuses deliberately on adaptation and cybernetic feedback, while persistent retention is left as a possible architectural extension.
+> The current project focuses deliberately on adaptation and cybernetic feedback, while persistent retention is left as a possible architectural extension.
 
 ## 📜License
 - Source code and HDL files are licensed under the MIT License.
