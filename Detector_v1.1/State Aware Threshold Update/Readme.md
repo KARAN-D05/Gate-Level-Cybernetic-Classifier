@@ -14,15 +14,8 @@ to stay or decrement the threshold by one step.
 decrement is always sufficient to reverse the output and 
 achieve correction.
 
-- **Complexity:** O(1) - correction always achieved in a single 
-clock cycle regardless of current threshold position.
-
-- **Hardware:** A decrementer, a cell pointer, 
-and a thinking module that decides step based on current 
-and desired state. Higher area and logical complexity than MIDS.
-
-- **Tradeoff:** Maximum correction speed at the cost of additional 
-hardware complexity and silicon area.
+- **Complexity:** O(1) - correction always achieved in constant time
+   regardless of current threshold position.
 
 <p align="center">
   <img src="videos/Cybernetic_Adaptive_Learning-SATU.gif" alt="Adaptive Learning Demonstration - SATU" width="1500">
