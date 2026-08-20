@@ -188,10 +188,10 @@ To verify hardware realizability, all detector variants were synthesized using *
 | Largest Cell Count      | Multi-POV Classifier (28 cells)            |
 
 <div align="center">
-    <img src="Detector_v1.0/Verilog-Implementation/images/yosys-synthesis.png" 
+    <img src="Detector_v0.2/Verilog-Implementation/images/yosys-synthesis.png" 
          alt="RTL-Synthesis" 
          width="2000">
-    <sub></b> <p> Detector_v1.0 Synthesized - Yosys ✅ </p>
+    <sub></b> <p> Detector_v0.2 Synthesized - Yosys </p>
 </div>
 
 ## 🗄️ Adaptation vs. Retention
